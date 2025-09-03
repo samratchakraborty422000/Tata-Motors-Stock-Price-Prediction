@@ -8,9 +8,7 @@ model = joblib.load("LinearRegression_best_model.pkl")
 # App title and logo
 st.set_page_config(page_title="Tata Stock Close Price Predictor", page_icon="📈")
 st.title("📊 Tata Stock Close Price Predictor")
-
-st.image('TataLogo.jpg', caption='Tata Stocks Prediction', use_column_width=True)
-
+st.image('TataLogo.jpg', caption='Tata Stocks Prediction', use_container_width=True)
 # -------------------------
 # Input Fields
 # -------------------------
@@ -30,3 +28,4 @@ if st.button("Predict Close Price"):
     prediction = model.predict(input_data)[0]
     
     st.success(f"📈 Predicted Close Price: ₹{prediction:.2f}")
+
