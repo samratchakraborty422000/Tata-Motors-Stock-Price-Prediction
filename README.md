@@ -9,7 +9,6 @@ This project applies machine learning regression models to predict **Tata Motors
 ## 📊 Dataset
 
 - **Source**: NSE – Tata Motors Stock Data (1995-01-02 to 2025-08-19)
-- **Shape**: 7,804 rows × 14 columns
 - **Features**:
   - `Date`: Trading day
   - `Open`: Opening price
